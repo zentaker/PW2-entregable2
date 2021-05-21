@@ -1,0 +1,32 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide  animate__animated animate__fadeIn" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item "   [class.active]="index == 0"data-bs-interval="8000" *ngFor="let movie of movies; let index = index"  >
+        <img src="http://image.tmdb.org/t/p/w500{{movie.backdrop_path}}" class="d-block w-100" alt="...">
+      </div>
+
+
+    </div>
+  </div>
+<div class="banner container  animate__animated animate__fadeIn text-center">
+<h1 class="text-white">Descubre tu pelicula favorita</h1>
+<p class="text-white">Utiliza el buscador para encontra y enterarte mas sobre tu pelicula</p>
+<div class="row gg justify-content-center ">
+    <div class="col-md-4">
+     
+        <input #txtBuscar (keyup.enter)="buscarPelicula(txtBuscar.value)" class="form-control form-control-lg" type="search" placeholder="Que pelicula estas Buscando?" aria-label="Search">
+
+    </div>
+    <div class=" bb col-md-2" style="">
+        <button (click)="buscarPelicula(txtBuscar.value)" type="button" class="btn btn-primary btn-lg"><i class="far fa-search"></i> Buscar</button>
+        
+    </div>
+</div>
+</div>
+
+
+
+<div class="container">
+<h1 class="mt-5 text-center">Las Peliculas</h1>
+<p class="text-center mb-5" style="color: #5D5C5C;">La cartelera actual con un scroll infinito</p>
+<app-peliculas-poster *ngIf="movies.length > 0" [movies]="movies"></app-peliculas-poster>
+</div>

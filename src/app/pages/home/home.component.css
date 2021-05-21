@@ -1,0 +1,67 @@
+.banner {
+    
+        position: absolute;
+        top: 0;
+        margin-top: 60PX;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: hanken;
+        
+        
+        
+    
+}
+.bb button {
+    margin-top: 10px;
+    background-color: #ea4e58;
+    border-color: #ea4e58;
+}
+#carouselExampleSlidesOnly img {
+    filter: brightness(30%);
+    height: 353px;
+}
+
+@font-face {
+    font-family: hanken;
+    src: url(../../../assets/fonts/Hanken-light.ttf);
+  }
+  .form-control-lg {
+    min-height: calc(1.5em + 1rem + 2px);
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+ 
+}
+
+  
+@media (min-width: 768px) {
+    .banner {
+    
+        position: absolute;
+        top: 0;
+        margin-top: 270PX;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: hanken;
+        
+    
+}
+.bb button {
+    margin-top: 0px;
+}
+.gg {
+    margin-top: 43px;
+}
+.form-control-lg {
+    min-height: calc(1.5em + 1rem + 2px);
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+}
+#carouselExampleSlidesOnly img {
+    filter: brightness(30%);
+    height: auto;
+}
+  }

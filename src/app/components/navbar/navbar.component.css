@@ -1,0 +1,49 @@
+nav {
+    width: 374px;
+    background-color: none;
+    
+}
+.navbar-brand img {
+    width: 90px;
+}
+.navbar-collapse ul {
+    background-color: black;
+    border-radius: 10px;
+
+    padding: 20px;
+
+}
+
+
+@media (min-width: 768px) {
+    nav {
+        width: 80vh;
+        background-color: none;
+        
+    }
+    .navbar-brand img {
+        width: 215px;
+    }
+    .navbar-collapse ul {
+        background-color: transparent;
+    }
+    .navbar-collapse ul {
+     
+    
+    }
+}
+    
+  
+
+  @font-face {
+    font-family: hanken;
+    src: url(../../../assets/fonts/Hanken-light.ttf);
+  }
+
+  .navbar-collapse ul li a {
+      font-family: hanken;
+      color: white;
+  }
+  .navbar-collapse ul li {
+      margin-right: 40px;
+  }
